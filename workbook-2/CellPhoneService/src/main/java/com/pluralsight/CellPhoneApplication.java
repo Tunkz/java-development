@@ -57,6 +57,25 @@ public class CellPhoneApplication {
         owner = scanner.nextLine();
         cellPhone2.setOwner(owner);
 
+        System.out.println("Enter the information for CellPhone 3:");
+        // Prompt user for cell phone information and set the properties
+        System.out.print("What is the serial number? ");
+        serialNumber = scanner.nextInt();  // Read integer value
+        scanner.nextLine();  // Consume newline
+
+        System.out.print("What model is the phone? ");
+        model = scanner.nextLine();  // Read entire line till newline
+
+        System.out.print("Who is the carrier? ");
+        carrier = scanner.nextLine();
+
+        System.out.print("What is the phone number? ");
+        phoneNumber = scanner.nextLine();
+
+        System.out.print("Who is the owner of the phone? ");
+        owner = scanner.nextLine();
+
+        CellPhone cellPhone3 = new CellPhone(serialNumber, model, carrier, phoneNumber, owner);
         // Close the scanner
         scanner.close();
 

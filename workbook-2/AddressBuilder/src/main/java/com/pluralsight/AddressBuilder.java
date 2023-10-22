@@ -1,42 +1,63 @@
+
+
+
 package com.pluralsight;
 
 import java.util.Scanner;
 
 public class AddressBuilder {
     public static void main(String[] args) {
-        StringBuilder addressBilling = new StringBuilder();
+        Scanner input = new Scanner(System.in);
 
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please provide the following information:");
 
-        addressBilling.append("\nFull name: ");
-        String fullName = scanner.nextLine();
+        // Get billing address information
+        System.out.print("Full name: ");
+        String fullName = input.nextLine();
 
-        addressBilling.append("\n\nBilling Street: ");
-        String billinStreet = scanner.nextLine();
+        System.out.print("Billing Street: ");
+        String billingStreet = input.nextLine();
 
-        addressBilling.append("\nBilling city: ");
-        String billingCity = scanner.nextLine();
+        System.out.print("Billing City: ");
+        String billingCity = input.nextLine();
 
-        addressBilling.append("\nBilling Zip: ");
-        String billingZip = scanner.nextLine();
+        System.out.print("Billing State: ");
+        String billingState = input.nextLine();
 
-        addressBilling.append("\n\nShipping Street: ");
-        String shippingStreet = scanner.nextLine();
+        System.out.print("Billing Zip: ");
+        String billingZip = input.nextLine();
 
-        addressBilling.append("\nShipping City: ");
-        String shippingCity = scanner.nextLine();
+        // Get shipping address information
+        System.out.print("Shipping Street: ");
+        String shippingStreet = input.nextLine();
 
-        addressBilling.append("\nShipping State: ");
-        String shippingState = scanner.nextLine();
+        System.out.print("Shipping City: ");
+        String shippingCity = input.nextLine();
 
-        addressBilling.append("\nShipping Zip: ");
-        String shippingZip = scanner.nextLine();
+        System.out.print("Shipping State: ");
+        String shippingState = input.nextLine();
 
-        String addressLocation = addressBilling.toString();
-        System.out.println(addressLocation);
+        System.out.print("Shipping Zip: ");
+        String shippingZip = input.nextLine();
 
+        // Build the address string
+        StringBuilder addressBuilder = new StringBuilder();
+        addressBuilder.append(fullName).append("\n\n");
 
+        addressBuilder.append("Billing Address:\n");
+        addressBuilder.append(billingStreet).append("\n");
+        addressBuilder.append(billingCity).append(", ");
+        addressBuilder.append(billingState).append(" ");
+        addressBuilder.append(billingZip).append("\n\n");
 
+        addressBuilder.append("Shipping Address:\n");
+        addressBuilder.append(shippingStreet).append("\n");
+        addressBuilder.append(shippingCity).append(", ");
+        addressBuilder.append(shippingState).append(" ");
+        addressBuilder.append(shippingZip).append("\n");
 
+        // Print the address
+        System.out.println(addressBuilder.toString());
+        System.out.println(addressBuilder);
     }
 }
