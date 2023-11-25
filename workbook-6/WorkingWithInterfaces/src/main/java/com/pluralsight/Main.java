@@ -1,7 +1,7 @@
 package com.pluralsight;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Main {
         myFamily.add(new Person("Dana", "Wyatt", 43));
 
 
-        Collections.sort(myFamily);
+        myFamily.sort(Comparator.naturalOrder());
 
         for (Person person : myFamily) {
             System.out.println(person);
