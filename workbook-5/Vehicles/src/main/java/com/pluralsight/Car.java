@@ -1,14 +1,7 @@
 package com.pluralsight;
 
 public class Car extends Vehicle {
-
-
     private int numberOfDoors;
-
-    public Car(String name, String model, String color, int topSpeed, int fuelCapacity, int numberOfPassengers, int cargoCapacity, int numberOfDoors) {
-        super(name, model, color, topSpeed, fuelCapacity, numberOfPassengers, cargoCapacity);
-        this.numberOfDoors = numberOfDoors;
-    }
 
     public int getNumberOfDoors() {
         return numberOfDoors;

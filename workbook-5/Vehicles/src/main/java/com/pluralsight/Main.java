@@ -10,7 +10,7 @@ public class Main {
         semiTruck.setNumberOfTrailers(2);
         semiTruck.setFuelCapacity(100);
 
-        Hovercraft hoverCraft = new Hovercraft();
+        HoverCraft hoverCraft = new HoverCraft();
         hoverCraft.setAirCushionPressure(50);
         hoverCraft.setColor("Blue");
 

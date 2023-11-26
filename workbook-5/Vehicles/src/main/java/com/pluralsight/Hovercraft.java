@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class Hovercraft extends Vehicle {
+public class HoverCraft extends Vehicle {
     private int airCushionPressure;
 
     public int getAirCushionPressure() {

@@ -1,24 +1,12 @@
 package com.pluralsight;
 
 public class Vehicle {
-    private final String name;
     private String model;
     private String color;
     private int topSpeed;
     private int fuelCapacity;
     private int numberOfPassengers;
     private int cargoCapacity;
-
-
-    public Vehicle(String name, String model, String color, int topSpeed, int fuelCapacity, int numberOfPassengers, int cargoCapacity) {
-        this.name = name;
-        this.model = model;
-        this.color = color;
-        this.topSpeed = topSpeed;
-        this.fuelCapacity = fuelCapacity;
-        this.numberOfPassengers = numberOfPassengers;
-        this.cargoCapacity = cargoCapacity;
-    }
 
     public String getModel() {
         return model;
